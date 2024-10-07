@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connexion</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+
+<div id="app">
+    <!-- Section pour la connexion -->
+    <section id="login-section">
+        <h2>Connexion</h2>
+        <form id="login-form">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="password">Mot de passe:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Se connecter</button>
+        </form>
+        <p id="login-error" class="error"></p>
+    </section>
+
+    <!-- Section pour afficher les informations de l'utilisateur connecté -->
+    <section id="user-section" style="display:none;">
+        <h2>Bienvenue <span id="user-name"></span>!</h2>
+        <button id="logout-btn">Se déconnecter</button>
+    </section>
+</div>
+
+<script src="/assets/js/app.js"></script>
+</body>
+</html>
