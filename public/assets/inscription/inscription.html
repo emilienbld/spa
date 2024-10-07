@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription</title>
+    <link rel="stylesheet" href="/assets/inscription/inscription.css">
+</head>
+<body>
+<div id="app">
+    <section id="register-section">
+        <h2>Inscription</h2>
+        <form id="register-form">
+            <label for="firstname">Prénom:</label>
+            <input type="text" id="firstname" name="firstname" required>
+            <label for="lastname">Nom:</label>
+            <input type="text" id="lastname" name="lastname" required>
+            <label for="email">Email:</label>
+            <input type="email" id="register-email" name="email" required>
+            <label for="password">Mot de passe:</label>
+            <input type="password" id="register-password" name="password" required>
+            <button type="submit">S'inscrire</button>
+        </form>
+        <p id="register-error" class="error"></p>
+        <p>Déjà un compte ? <a href="/assets/connexion/connexion.html">Se connecter ici</a></p>
+    </section>
+</div>
+
+<script src="/assets/inscription/inscription.js"></script>
+</body>
+</html>
