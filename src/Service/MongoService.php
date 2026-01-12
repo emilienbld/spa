@@ -18,6 +18,8 @@ class MongoService
             // Accéder à la collection 'users' dans la base de données 'v2spa'
             $this->usersCollection = $this->client->v2spa->users;
         } catch (\Exception $e) {
+            // ERREUR DE SÉCURITÉ : on affiche le message complet d'exception à l'écran
+            // au lieu de loguer un message générique côté serveur.
             die("Erreur de connexion à MongoDB : " . $e->getMessage());
         }
     }
@@ -36,7 +38,4 @@ class MongoService
     {
         $this->usersCollection->insertOne($user);
     }
-
-
-
 }
